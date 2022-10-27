@@ -16,6 +16,7 @@ while 1:
     readCommand(command)
 
 """
+#commented
 addTaskToList(list, "Buy")
 
 list[0].date = "02.03.2022"
