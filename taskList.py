@@ -6,10 +6,14 @@ def createTaskList(q):
         taskList.append(Task(header="Task " + str(i)))
     return taskList
 
-def addTaskToList(taskList, header):
-    taskList = taskList.append(Task(header=header))
+def addTask(task, taskList):
+    taskList.append(task)
 
-def printTaskList(taskList):
+def show(taskList):
     for task in taskList:
         print(task.header)
-    print("\n")
+
+def searchTask(header, tasks):
+    for task in tasks:
+        if task.header == header:
+            return task

@@ -1,11 +1,10 @@
 import os
 from Task import Task
-from taskList import createTaskList, printTaskList, addTaskToList
 from commands import readCommand
 
 print("Start the program")
 
-list = createTaskList(0)
+#list = createTaskList(0)
 
 while 1:
     command = input()

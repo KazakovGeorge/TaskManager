@@ -10,8 +10,11 @@ class Task():
         self.date = ""
         self.time = ""
 
+    def newTask(header):
+        return Task(header=header)
+
     def printAll(self):
-        print(self.header, "\n", self.body, "\n", self.date, "\n", self.time)
+        print("Header: " +  self.header, "\n","Body: " + self.body, "\n", "Date: " + self.date, "\n", "Time: " +  self.time)
 
     def changeHeader(self):
         self.header = "Changed"

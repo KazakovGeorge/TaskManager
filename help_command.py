@@ -1,0 +1,1 @@
+help_text = "Task manager v 0.1 \n create by GeoKaz \n /task -create \n /taskList -show \n /taskList -show \n /tas      k -search"
