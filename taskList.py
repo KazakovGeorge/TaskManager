@@ -15,5 +15,5 @@ def show(taskList):
 
 def searchTask(header, tasks):
     for task in tasks:
-        if task.header == header:
+        if task.header.lower() == header.lower():
             return task
