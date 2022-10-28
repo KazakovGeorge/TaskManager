@@ -15,6 +15,3 @@ class Task():
 
     def printAll(self):
         print("Header: " +  self.header, "\n","Body: " + self.body, "\n", "Date: " + self.date, "\n", "Time: " +  self.time)
-
-    def changeHeader(self):
-        self.header = "Changed"

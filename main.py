@@ -9,6 +9,8 @@ print("Start the program")
 while 1:
     command = input()
 
+    os.system("cls")
+
     if command == "/exit":
         break
 

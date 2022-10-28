@@ -18,15 +18,20 @@ def readCommand(command):
                 print("Empty command")
 
             elif command == "/task -create":
-                tmp = Task.newTask(input("Enter the header\n"))
-                taskList.addTask(tmp, tasks)
+                header = Task.newTask(input("Enter the header\n"))
+                taskList.addTask(header, tasks)
+                print("Task: \"" + header + "\" was create")
 
             elif command == "/taskList -show":
                 taskList.show(tasks)
 
             elif command == "/task -search":
-                task = taskList.searchTask(input("Enter task name:\n"), tasks)
-                task.printAll()
+                header = input("Enter task name:\n")
+                task = taskList.searchTask(header, tasks)
+                if task != None:
+                    task.printAll()
+                else:
+                    print("Task \"" + header + "\" not found")
 
             else:
                 print("Command not exist: \"" + command + "\"")
